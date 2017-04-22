@@ -14,14 +14,14 @@ public class AdministratorRegisterUserTest implements iUserTest {
     public void User_Get_Access_LoginPage() {
         user.setAccessRules(rules);
         boolean result = user.getAccessRules().isAccessLoginPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Override
     public void User_Get_Access_RegisterPage() {
         user.setAccessRules(rules);
         boolean result = user.getAccessRules().isAccessRegisterPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Override

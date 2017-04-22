@@ -23,14 +23,14 @@ public class PremiumRegisterUserTest implements iUserTest {
     public void User_Get_Access_LoginPage() {
         user.setAccessRules(rules);
         boolean result = user.getAccessRules().isAccessLoginPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test
     public void User_Get_Access_RegisterPage() {
         user.setAccessRules(rules);
         boolean result = user.getAccessRules().isAccessRegisterPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test

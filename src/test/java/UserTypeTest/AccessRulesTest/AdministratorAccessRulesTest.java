@@ -20,7 +20,7 @@ public class AdministratorAccessRulesTest extends Mockito implements iRulesTest 
     @Test
     public void Access_Rules_isCorect_LoginPage() {
         boolean result = rules.isAccessLoginPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test

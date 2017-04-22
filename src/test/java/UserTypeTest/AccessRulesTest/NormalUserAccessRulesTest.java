@@ -12,13 +12,13 @@ public class NormalUserAccessRulesTest extends Mockito implements iRulesTest {
     @Test
     public void Access_Rules_isCorect_LoginPage() {
         boolean result = rules.isAccessLoginPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test
     public void Access_Rules_isCorect_RegisterPage() {
        boolean result = rules.isAccessRegisterPage();
-       assertEquals(true, result);
+       assertEquals(false, result);
     }
 
     @Test

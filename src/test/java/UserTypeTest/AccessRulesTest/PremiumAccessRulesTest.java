@@ -18,13 +18,13 @@ public class PremiumAccessRulesTest implements iRulesTest {
     @Override
     public void Access_Rules_isCorect_LoginPage() {
         boolean result = rules.isAccessLoginPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Override
     public void Access_Rules_isCorect_RegisterPage() {
         boolean result = rules.isAccessRegisterPage();
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Override
